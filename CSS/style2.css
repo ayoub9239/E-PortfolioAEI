@@ -1,0 +1,431 @@
+/**********************************PARTIE ACCEUIL *******************************/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1DDD3;
+    color: #E1DDD3;
+}
+
+header {
+    background-color: #C9D2D1;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #A47C66;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+    background-color: #DAB89D;
+    color: #fff;
+}
+
+#logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo {
+    height: 60px; 
+    width: auto;
+    margin-right: 10px;
+}
+
+section {
+    padding: 50px;
+    overflow: hidden;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+
+.background-section{
+    background: url("../image/arriereplan.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+
+#presentation {
+    background-color: #C9D2D1;
+    padding: 50px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#presentation .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#presentation .text {
+    max-width: 600px;
+    border: 2px solid #333; 
+    padding: 20px; 
+}
+
+#presentation h2 {
+    font-size: 28px; 
+    color: #A4B2B0; 
+    margin-bottom: 15px; 
+}
+
+#presentation p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+	color: #A47C66;
+}
+
+#presentation .image {
+    flex-shrink: 0; 
+}
+
+#presentation img {
+	margin-right:100px;
+    max-width: 200%;
+    height: 500px;
+    border-radius: 8px;
+}
+
+
+#logo-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:0px; 
+
+}
+
+
+.section-content {
+    text-align: center; 
+}
+
+.section-content .text {
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.section-content .text h2 {
+    font-size: 32px; 
+}
+
+.section-content .text p {
+    font-size: 24px; 
+    line-height: 1.6; 
+}
+
+/*"""""""""""""""""""""""""""""""""""""""""""""" diplomes et experiences  """""""""""""""""""""""""""""""""""""""""""""""""*/
+#diplomes {
+    background-color: #A4B2B0;
+    color: #E1DDD3;
+    padding: 20px; 
+}
+
+#diplomes .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #E1DDD3;
+    border-radius: 8px;
+}
+
+.text-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#diplomes table {
+    width: 100%;
+	height: 400px;
+    border-collapse: collapse;
+    margin-top: 120px;
+}
+
+#diplomes table, #diplomes th, #diplomes td {
+    border: 2px solid #E1DDD3;
+}
+
+#diplomes th, #diplomes td {
+    padding: 15px;
+    text-align: left;
+}
+
+#diplomes th {
+    background-color: #DAB89D;
+}
+
+.diplome-clickable {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.diplome-clickable:hover {
+    background-color: #DAB89D;
+}
+
+.diplome-clickable.selected {
+    background-color: #DAB89D;
+    color: #fff;
+}
+
+
+
+#experiences {
+    background-color: #A4B2B0;
+    color: #E1DDD3;
+    padding: 20px;
+    margin-top: 0; 
+}
+
+#experiences table {
+    width: 100%;
+    height: 40px;
+    border-collapse: collapse;
+    margin-top: 180px;
+}
+
+#experiences th, #experiences td {
+    border: 2px solid #fff;
+    padding: 15px;
+    text-align: left;
+}
+
+#experiences th {
+    background-color: #DAB89D;
+	
+}
+
+#experiences p {
+    margin-bottom: 20px; 
+}
+
+/*""""""""""""""""""""""""""""""""""""""""""""""PARTIE Competences """""""""""""""""""""""""""""""""""""""""""""""""*/
+
+#competences {
+    margin: 20px; 
+}
+#competences p {
+    font-size: 22px; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+	color: #DAB89D;
+}
+
+#competences table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 90px; 
+}
+
+#competences th,#competences td {
+    border: 1px solid #333; 
+    padding: 12px;
+    text-align: left;
+	background-color:#A4B2B0;
+}
+
+#competences th {
+    background-color: #DAB89D; 
+}
+#competences h2 {
+    color: #A4B2B0; 
+}
+#competences h3 {
+    color: #A4B2B0; /* Changez la couleur selon votre design */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px; /* Taille de police souhaitée */
+}
+
+
+/*"""""""""""""""""""""""""""""""""""""" POUR Les PORJETS """""""""""""""""""""""""""""""""""""""""""""""""*/
+
+
+#projets {
+    background-color: #A4B2B0;
+    color: #E1DDD3;
+    padding: 20px;
+}
+
+#projets .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projets h2 {
+    color: #FFF; 
+}
+
+#projets table {
+    width: 100%;
+    height: 400px;
+    border-collapse: collapse;
+    margin-top: 200px;
+}
+
+#projets th, #projets td,#projets tr {
+    border: 2px solid #fff;
+    padding: 15px;
+    text-align: left;
+	background-color:#A4B2B0;
+}
+
+#projets th {
+    background-color: #DAB89D; 
+}
+
+#projets td {
+    margin: 0; 
+}
+#projets .content .intro-text {
+    font-size: 24px; 
+    line-height: 1.5; 
+}
+
+
+.projet-link {
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    color: #000; /* Couleur du texte par défaut */
+    text-decoration: none; /* Optionnel : Supprime le soulignement par défaut des liens */
+}
+
+.projet-link:hover {
+    background-color: #DAB89D;
+    color: #fff; /* Change la couleur du texte au survol */
+}
+
+.projet-link.selected {
+    background-color: #DAB89D;
+    color: #fff;
+}
+
+
+/*"""""""""""""""""""""""""""""""""""""""""""""" cv """""""""""""""""""""""""""""""""""""""""""""""""*/
+#cv .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; 
+}
+#cv {
+    background-color: #DAB89D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*"""""""""""""""""""""""""""""""""""""""""""""" contact """""""""""""""""""""""""""""""""""""""""""""""""*/
+
+
+#contact {
+    background-color: #A47C66;
+    color: #E1DDD3;
+}
+
+#contact .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact_form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+	
+}
+
+#contact_form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contact_form input,
+#contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#contact_form button {
+    background-color: #A47C66;
+    color: #E1DDD3;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact_form button.btn_annulation {
+    background-color: #888;
+    margin-left: 10px;
+}
+
+
+
+
+#coordonnees {
+    margin-top: 150px;
+    border: 1px solid #A47C66;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#coordonnees h2 {
+    color: #A47C66;
+}
+
+#coordonnees p {
+    margin-bottom: 10px;
+	color:#A47C66;
+}
+
+#coordonnees a {
+    color: #A47C66;
+	
+}
+
+
+
+

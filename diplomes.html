@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+    <title>Diplômes et Expériences</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var clickableDiplomes = document.querySelectorAll('.diplome-clickable');
+
+            clickableDiplomes.forEach(function (diplome) {
+                diplome.addEventListener('click', function () {
+                    var ecolelien = diplome.getAttribute('data-link');
+                   
+                    window.open(ecolelien, '_blank');
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" id="logo-link">
+            <img src="image/logo.jpg" alt="Logo" id="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="diplomes.html">Diplômes et expériences</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="diplomes">
+        <div class="content">
+            <div class="text-container">
+                <h2>Diplômes</h2>
+                <p>Au niveau de mes diplômes, actuellement étudiant en Science des Données à l'IUT Paris – Rives de Seine, Université Paris Cité, où je poursuis un Bachelor Universitaire de Technologie (Bac +3).</p>
+                <p>J'ai obtenu mon Baccalauréat général au Lycée Guy De Maupassant, spécialisé en Mathématiques et Numérique-Sciences-Informatique, avec une mention "assez bien".</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Période</th>
+                    <td>2022-09 – 2025-07</td>
+                    <td>2021-09 - 2022-07</td>
+                </tr>
+                <tr>
+                    <th>Formation</th>
+                    <td>Bachelor Universitaire de Technologie : Science des Données (Bac +3)</td>
+                    <td>Baccalauréat général</td>
+                </tr>
+                <tr>
+                    <th>École</th>
+                    <td class="diplome-clickable" data-link="https://iutparis-seine.u-paris.fr/">IUT Paris – Rives de Seine - Université Paris Cité - 75016 Paris</td>
+                    <td class="diplome-clickable" data-link="https://lyc-maupassant-colombes.ac-versailles.fr/">Lycée Guy De Maupassant – 92700 Colombes</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+	<section id="experiences">
+    <div class="content">
+        <div class="text-container">
+            <h2>Expériences Professionnelles</h2>
+            <p>Au cours de ma vie, j’ai eu des expériences professionnelles qui m’ont aidé à développer des compétences primordiales dans le cursus. Voici ci-dessous mes expériences :</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Période</th>
+                    <th>Intitulé du Poste</th>
+                    <th>Entreprise</th>
+					<th>Contrat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-03 - Actuel</td>
+                    <td>Equipier Commercial</td>
+                    <td>Metro, Villeneuve-La-Garenne</td>
+					<td>CDI temps partiel</td>
+                </tr>
+				    <tr>
+						<td>2024-04 - Actuel</td>
+						<td>Biostatisticien </td>
+						<td>Hopital Saint-Antoine_APHP, Paris 12e</td>
+						<td> Stage</td>
+					</tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style2.css">
+    <title>Contact</title>
+    <script>
+        function openContactForm() {
+            document.getElementById("contact_form").style.display = "block";
+        }
+
+        function closeContactForm() {
+            document.getElementById("contact_form").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" id="logo-link">
+            <img src="image/logo.jpg" alt="Logo" id="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="diplomes.html">Diplômes et expériences</a></li>
+                <li><a href="competences.html">compétences</a></li>
+                <li><a href="projet.html">Projet</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="javascript:void(0);" onclick="openContactForm()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter en utilisant le formulaire ci-dessous ou en utilisant les coordonnées
+                fournies.</p>
+            <button type="button" onclick="openContactForm()">Ouvrir le formulaire de contact</button>
+        </div>
+    </section>
+
+    <div class="form_popup" id="contact_form">
+        <form action="envoyer_email.php" class="form_container" method="post">
+            <h1>Contactez-moi</h1>
+            <label for="email">Votre adresse e-mail</label>
+            <input type="email" placeholder="Saisissez votre e-mail" name="email" required>
+
+            <label for="objet">Objet</label>
+            <input type="text" placeholder="Saisissez l'objet de votre message" name="objet" required>
+
+            <label for="message">Message</label>
+            <textarea placeholder="Écrivez votre message ici" name="message" required></textarea>
+
+            <button type="submit" class="btn">Envoyer</button>
+            <button type="button" onclick="closeContactForm()" class="btn_annulation">Annuler</button>
+        </form>
+    </div>
+
+    <section id="coordonnees">
+        <h2>Coordonnées</h2>
+        <p>Vous pouvez également me contacter via les coordonnées suivantes :</p>
+        <p>Adresse e-mail : ayoub032004@gmail.com</p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/ayoub-errahmani-b0a388273/" target="_blank">Mon Profil LinkedIn</a></p>
+    </section>
+
+</body>
+
+</html>
